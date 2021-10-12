@@ -1,4 +1,5 @@
 import discord
+from os import getenv
 
 client = discord.Client()
 
@@ -25,4 +26,5 @@ async def on_message(message):
     if message.content.lower() == ("/help"):
       await message.channel.send("こいつ俺のこと知りたいらしいぜｗｗ/n教えねぇよｗｗ")
 
-client.run("ODk3MTAxOTI3NzE0Nzg3MzU5.YWQxRg.QiYgkFjKlW-Xho8EGdirmzAX2Ug")
+token = getenv('token')
+client.run(token)
