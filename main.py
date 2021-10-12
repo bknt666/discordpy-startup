@@ -24,7 +24,7 @@ async def on_message(message):
     if message.content.lower() == ("うんこ" or "ウンコ" or "💩"):
       await message.channel.send("俺ウンコ食ったことあるんだぜ！")
     if message.content.lower() == ("/help"):
-      await message.channel.send("こいつ俺のこと知りたいらしいぜｗｗ/n教えねぇよｗｗ")
+      await message.channel.send("こいつ俺のこと知りたいらしいぜｗｗ\n教えねぇよｗｗ")
 
 token = getenv('token')
 client.run(token)
